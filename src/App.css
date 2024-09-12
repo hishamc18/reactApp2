@@ -20,13 +20,14 @@ body {
   transform: scale(90%);
 }
 
-.components div:nth-child(2) {
+.components div:nth-child(1) {
   align-self: center;
   justify-self: center;
 }
 
 .counter {
   background-color: #2e2e2e;
+  border-radius: 20px;
   text-align: center;
   color: aliceblue;
   display: flex;
@@ -48,6 +49,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-radius: 20px;
 }
 
 .textfiled {
@@ -58,6 +60,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 
 .text {
@@ -73,6 +76,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1em;
+  border-radius: 20px;
 }
 
 .cb {
@@ -88,16 +92,17 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.5em;
+  border-radius: 20px;
 }
 
 .light-mode {
   background-color: white;
-  transition: background-color 0.5s;
+  /* transition: background-color 0.5s; */
 }
 
 .dark-mode {
   background-color: black;
-  transition: background-color 0.5s;
+  /* transition: background-color 0.5s; */
 }
 
 button {

@@ -20,18 +20,18 @@ function App() {
         <div className="app">
             <div className={appClass}>
                 <div className="components">
-                    <Counter />
                     <div className="child">
                         <button onClick={toggleDarkMode} className="dark">
                             {isDarkMode ? "Light Mode" : "Dark Mode"}
                         </button>
                     </div>
+                    <Counter />
                     <Age />
                     <Textfield />
                     <Checkbox />
                     <Form />
                 </div>
-        </div>
+            </div>
         </div>
     );
 }
