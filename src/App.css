@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.components {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+  width: 88vw;
+  padding: 20px 20px;
+}
+
+.dark {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 46%;
+  left: 8px;
+
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100vh;
+}
+
+.counter {
+  background-color: #1a1a1a;
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Age {
+  background-color: #f58080;
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+}
+
+.textfiled {
+  background-color: #7f87cd;
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text{
+  transform: scale(1.5);
+}
+
+.checkbox {
+  background-color: #493a44;
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cb {
+  transform: scale(3);
+}
+
+.form {
+  background-color: #5e740a;
+  text-align: center;
+  color: aliceblue;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app.light-mode {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s, color 0.5s;
+  width: 100vw;
+}
+
+.app.dark-mode {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+  width: 100vw;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.2em;
+  font-weight: 600;
+  background-color: #209987;
+  color: white;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: rgb(6, 101, 74);
+  transition: 0.5s;
+}
