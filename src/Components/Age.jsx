@@ -15,17 +15,19 @@ function Age() {
         <div className="Age">
             <h2>Updating state with taking previous state</h2>
             <h1>Age: {age}</h1>
+            <div>
             <button onClick={incrementAge}>+1</button>
-            <button
-                onClick={() => {
-                    incrementAge();
-                    incrementAge();
-                    incrementAge();
-                }}
-            >
-                +3
-            </button>
-            <button onClick={reset}>Reset</button>
+                <button
+                    onClick={() => {
+                        incrementAge();
+                        incrementAge();
+                        incrementAge();
+                    }}
+                >
+                    +3
+                </button>
+            </div>
+                <button onClick={reset}>Reset</button>
         </div>
     );
 }

@@ -14,22 +14,24 @@ function App() {
         setIsDarkMode((prevMode) => !prevMode);
     };
 
-    const appClass = isDarkMode ? "app dark-mode" : "app light-mode";
+    const appClass = isDarkMode ? "dark-mode" : "light-mode";
 
     return (
-        <div className={appClass}>
-            <button onClick={toggleDarkMode} className="dark">
-                {isDarkMode ? "Light Mode" : "Dark Mode"}
-            </button>
-            <div className="app">
+        <div className="app">
+            <div className={appClass}>
                 <div className="components">
                     <Counter />
+                    <div className="child">
+                        <button onClick={toggleDarkMode} className="dark">
+                            {isDarkMode ? "Light Mode" : "Dark Mode"}
+                        </button>
+                    </div>
                     <Age />
                     <Textfield />
                     <Checkbox />
                     <Form />
                 </div>
-            </div>
+        </div>
         </div>
     );
 }
