@@ -91,14 +91,14 @@ body {
   background-color: white;
   color: black;
   transition: background-color 0.5s, color 0.5s;
-  height: 100vh;
+  height: 100%;
 }
 
 .app.dark-mode {
   background-color: black;
   color: white;
   transition: background-color 0.5s, color 0.5s;
-  height: 100vh;
+  height: 100%;
 }
 
 button {
