@@ -7,6 +7,10 @@ function Age() {
         setAge((a) => a + 1);
     }
 
+    function decrementAge() {
+        setAge((a) => a - 1);
+    }
+
     function reset() {
         setAge((Age = 0));
     }
@@ -16,18 +20,16 @@ function Age() {
             <h2>Updating state with taking previous state</h2>
             <h1>Age: {age}</h1>
             <div>
-            <button onClick={incrementAge}>+1</button>
+                <button onClick={incrementAge}>+1</button>
                 <button
                     onClick={() => {
-                        incrementAge();
-                        incrementAge();
-                        incrementAge();
+                        decrementAge();
                     }}
                 >
-                    +3
+                    -1
                 </button>
             </div>
-                <button onClick={reset}>Reset</button>
+            <button onClick={reset}>Reset</button>
         </div>
     );
 }
